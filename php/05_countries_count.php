@@ -2,7 +2,7 @@
 require_once("./src/connect.php");
 
 // Requête SQL pour récupérer tous les pays, en un seul exemplaire, et le nombre d'utilisateurs par pays
-$sql = "";
+$sql = "SELECT country, COUNT(*) FROM users GROUP BY country";
 
 
 // Préparation de la requête

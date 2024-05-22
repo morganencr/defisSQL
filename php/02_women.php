@@ -2,7 +2,7 @@
 require_once("./src/connect.php");
 
 // Requête SQL pour récupérer les prénoms et noms de toutes les femmes
-$sql = "";
+$sql = "SELECT * FROM users WHERE gender = 'Female'";
 
 
 // Préparation de la requête

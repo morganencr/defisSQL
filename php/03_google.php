@@ -2,7 +2,7 @@
 require_once("./src/connect.php");
 
 // Requête SQL pour récupérer tous les utilisateurs dont l'adresse e-mail contient "google" (prénom, nom de famille, adresse e-mail)
-$sql = "";
+$sql = "SELECT * FROM users WHERE email LIKE '%google%'";
 
 
 // Préparation de la requête
