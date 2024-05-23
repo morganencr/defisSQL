@@ -25,12 +25,13 @@ require_once("./src/close.php");
 </head>
 <body>
     <?php include_once('./components/nav.php') ?>
-    <pre><?= print_r($result) ?></pre>
+    <!-- <pre><?= print_r($result) ?></pre> -->
 
     <div>
         <?php
             foreach ($result as $user) {
                 // faire un écho du prénom et du nom de famille des utilisatrice
+                echo $user['first_name'] . " " . $user['last_name'] . "<br>";
 
             }
         ?>

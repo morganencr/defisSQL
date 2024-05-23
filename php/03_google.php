@@ -24,11 +24,12 @@ require_once("./src/close.php");
 </head>
 <body>
     <?php include_once('./components/nav.php') ?>
-    <pre><?= print_r($result) ?></pre>
+    <!-- <pre><?= print_r($result) ?></pre> -->
     <div>
         <?php
             foreach ($result as $user) {
                 // faire un echo du prénom, nom de famille et adresse e-mail de chaque utilisateur trouvé
+                echo $user['first_name'] . " " . $user['last_name'] . " - " . $user['email'] . "<br>";
                 
             }
         ?>

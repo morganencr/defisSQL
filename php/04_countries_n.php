@@ -24,12 +24,12 @@ require_once("./src/close.php");
 </head>
 <body>
     <?php include_once('./components/nav.php') ?>
-    <pre><?= print_r($result) ?></pre>
+    <!-- <pre><?= print_r($result) ?></pre> -->
     <div>
         <?php
             foreach ($result as $country) {
                 // faire un echo des pays trouvés
-                
+                echo $user['first_name'] . " " . $user['last_name'] . " - " . $user['country'] . "<br>";
             }
         ?>
     </div>

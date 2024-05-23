@@ -2,7 +2,7 @@
 require_once("./src/connect.php");
 
 // Requête SQL pour modifier l'adresse e-mail du nouvel utilisateur
-$sql = "";
+$sql = "UPDATE users SET email = 'nouveaumail@mail.fr' WHERE id = 1";
 
 
 // Préparation de la requête
